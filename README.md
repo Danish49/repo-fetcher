@@ -22,7 +22,7 @@ Before running the app on your system, make sure to follow these steps:
    
 
 3. Run the app.
-  open with live server
+ - open with live server
 
 4. Access the app.
    - Open your web browser and go to https://repo-fetcher.netlify.app/
