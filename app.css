@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .input-wrapper {
+  width: 26rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.input-wrapper:focus-within {
+  border: 2px solid #3c7fbc;
+}
+
+.input-wrapper input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.submit:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main .user-profile {
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  margin: 0;
+}
+
+.user-profile .user-profile__image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.user-profile__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.repo-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 6rem auto;
+}
+
+.repodiv {
+  width: 100%;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.buttons {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.page-number {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #3c7fbc;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.prev-button,
+.next-button {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 600;
+  color: #3c7fbc;
+}
+
+.active-btn {
+  background-color: #3c7fbc;
+  color: #fff;
+}
+
+.repo-lang {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.language {
+  background-color: #3c7fbc;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main .user-profile {
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .main .user-profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main .user-profile .user-profile__image {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .user-profile .user-profile__info {
+    text-align: center;
+  }
+  .repo-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header .input-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+}
