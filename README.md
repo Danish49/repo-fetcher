@@ -8,7 +8,7 @@ Before running the app on your system, make sure to follow these steps:
 
 1. Clone the repository to your local machine.
    ```
-   git clone https://github.com/your-username/repo-fetcher.git
+   git clone https://github.com/danish49/repo-fetcher.git
    ```
 
 2. Add your API key.
