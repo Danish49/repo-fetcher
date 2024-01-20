@@ -1,3 +1,3 @@
 # This web app fetches upto 100 repos of a given username along with basic details.
 
-🔵TO ENSURE THE APP WORKS, MAKE SURE TO REPLACE THE API KEY BEFORE RUNNING THE APP OON YOUR SYSTEM🔵
+#🔵To ensure the app works, make sure to replace the api key before running the app on your system🔵
